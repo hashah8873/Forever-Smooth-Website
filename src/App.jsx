@@ -455,6 +455,14 @@ function App() {
 >
   See More Reviews on Google
 </a>
+<a
+  href="https://bit.ly/4477LdQ"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="review-btn"
+>
+  Leave a Google Review
+</a>
 </section>
  {/* GALLERY */}
 
