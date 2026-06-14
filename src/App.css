@@ -651,6 +651,20 @@ body{
 
   color:#6d7392;
 }
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing {
+    padding: 70px 20px;
+  }
+
+  .pricing-header h2 {
+    font-size: 40px;
+  }
+}
 /* =========================
    REVIEWS
 ========================= */
