@@ -774,22 +774,12 @@ body{
   transform:translateY(-2px);
 }
 
-.review-btn{
-  display:inline-block;
-  margin-top:25px;
-
-  padding:14px 30px;
-
-  background:#ff4fa8;
-  color:white;
-
-  text-decoration:none;
-
-  border-radius:30px;
-
-  font-weight:600;
-
-  transition:.3s;
+.review-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .review-btn:hover{

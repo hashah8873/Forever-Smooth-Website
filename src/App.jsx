@@ -447,22 +447,26 @@ function App() {
     </div>
 
   </div>
-<a
-  href="https://bit.ly/4477LdQ"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="review-btn"
->
-  See More Reviews on Google
-</a>
-<a
-  href="https://bit.ly/4477LdQ"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="review-btn"
->
-  Leave a Google Review
-</a>
+
+<div className="review-buttons">
+  <a
+    href="https://bit.ly/4477LdQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="review-btn"
+  >
+    See More Reviews on Google
+  </a>
+
+  <a
+    href="https://bit.ly/4477LdQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="review-btn"
+  >
+    Leave a Google Review
+  </a>
+</div>
 </section>
  {/* GALLERY */}
 
