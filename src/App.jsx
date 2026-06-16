@@ -34,7 +34,7 @@ const App = () => {
   </button>
 
   <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-    <li><a href="#">Home</a></li>
+    <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#pricing">Pricing</a></li>
@@ -42,11 +42,11 @@ const App = () => {
     <li><a href="#contact">Contact</a></li>
   </ul>
 
-  <a href="#contact" className="primary-btn nav-book-btn">
+  <a href="#contact" className="nav-book-btn">
     Book Appointment
   </a>
-</nav>
 
+</nav>
       {/* HERO SECTION */}
 
       <section className="hero">
