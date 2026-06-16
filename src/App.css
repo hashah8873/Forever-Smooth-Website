@@ -1376,4 +1376,13 @@ body{
     font-weight:600;
   }
 }
+/* FORCE HIDE HAMBURGER ON DESKTOP */
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}
 }
