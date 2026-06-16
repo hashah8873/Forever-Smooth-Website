@@ -1193,8 +1193,27 @@ body{
 
 @media (max-width: 768px) {
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .logo img {
+    width: 220px;
+    height: auto;
+  }
+
   .menu-toggle {
     display: block;
+    background: none;
+    border: none;
+    font-size: 42px;
+    font-weight: bold;
+    color: #08145f;
+    cursor: pointer;
+    z-index: 1001;
   }
 
   .nav-book-btn {
@@ -1206,12 +1225,12 @@ body{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 100px;
+    top: 110px;
     left: 0;
     width: 100%;
     background: #ffffff;
-    padding: 25px 0;
-    gap: 20px;
+    padding: 30px 0;
+    gap: 25px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     z-index: 999;
   }
@@ -1232,6 +1251,25 @@ body{
   }
 }
 
+/* Desktop */
+@media screen and (min-width: 769px) {
+
+  .menu-toggle {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    gap: 40px;
+  }
+}
 /* Desktop Only */
 @media (min-width: 769px) {
 
@@ -1249,5 +1287,14 @@ body{
     padding: 0;
     gap: 40px;
   }
+}
+/* FORCE HIDE MOBILE MENU ON DESKTOP */
+@media screen and (min-width: 769px) {
+
+  .menu-toggle {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
 }
 }

@@ -21,16 +21,17 @@ const App = () => {
       {/* NAVBAR */}
 
      <nav className="navbar">
+
   <div className="logo">
     <img src={logo} alt="Forever Smooth Logo" />
   </div>
 
- <button
-  className="menu-toggle"
-  onClick={() => setMenuOpen(!menuOpen)}
->
-  {menuOpen ? "✕" : "☰ Menu"}
-</button>
+  <button
+    className="menu-toggle"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    {menuOpen ? "✕" : "☰"}
+  </button>
 
   <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
     <li><a href="#">Home</a></li>
