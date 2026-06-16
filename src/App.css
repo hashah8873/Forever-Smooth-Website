@@ -26,33 +26,27 @@ body{
 .navbar{
   width:100%;
   height:110px;
-
   background:#ffffff;
-
   display:flex;
   justify-content:space-between;
   align-items:center;
-
-  padding:0 70px;
-
+  padding:0 45px;
   border-bottom:1px solid #f3dce7;
-
   position:sticky;
   top:0;
   z-index:1000;
 }
 
 .logo img{
-  width:320px;
+  width:250px;
   height:auto;
   display:block;
-
   margin-top:0;
 }
 
 .nav-links{
   display:flex;
-  gap:40px;
+  gap:28px;
   list-style:none;
 }
 
@@ -1384,5 +1378,47 @@ body{
     opacity: 0 !important;
     pointer-events: none !important;
   }
+}   /* <-- أضف هذا السطر */
+
+ /* DESKTOP FIXES ONLY */
 }
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+}   /* <-- أضف هذا السطر */
+
+ /* DESKTOP FIXES ONLY */
+@media (min-width:769px){
+
+  .menu-toggle{
+    display:none !important;
+  }
+
+  .nav-book-btn{
+    background:linear-gradient(
+      135deg,
+      #ff43a9,
+      #f14fb9
+    ) !important;
+
+    color:white !important;
+    text-decoration:none;
+    padding:15px 28px;
+    border-radius:15px;
+    font-size:16px;
+    font-weight:700;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 25px rgba(255,67,169,.25);
+    transition:.3s;
+  }
+
+  .nav-book-btn:hover{
+    transform:translateY(-2px);
+  }
 }
