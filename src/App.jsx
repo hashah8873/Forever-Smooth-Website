@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import heroImage from "./assets/hero.jpg";
 import logo from "./assets/logo.png";
 
@@ -8,30 +10,41 @@ import gallery4 from "./assets/gallery4.jpg.webp";
 
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram, FaFacebook, FaGoogle } from "react-icons/fa";
-function App() {
+const App = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
+    <>
     <div className="app">
 
       {/* NAVBAR */}
 
-      <nav className="navbar">
-        <div className="logo">
-          <img src={logo} alt="Forever Smooth Logo" />
-        </div>
+     <nav className="navbar">
+  <div className="logo">
+    <img src={logo} alt="Forever Smooth Logo" />
+  </div>
 
-        <ul className="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <button
+    className="menu-toggle"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    ☰
+  </button>
 
-        <a href="#contact" className="primary-btn">
-  Book Appointment
-</a>
-      </nav>
+  <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <a href="#contact" className="primary-btn nav-book-btn">
+    Book Appointment
+  </a>
+</nav>
 
       {/* HERO SECTION */}
 
@@ -680,7 +693,10 @@ function App() {
   </div>
 
 </footer>
+
 </div>
+
+</>
 );
 }
 

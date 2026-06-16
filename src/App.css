@@ -1179,4 +1179,40 @@ body{
     right:15px;
     bottom:15px;
   }
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #08145f;
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-book-btn {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
 }
