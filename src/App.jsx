@@ -25,12 +25,12 @@ const App = () => {
     <img src={logo} alt="Forever Smooth Logo" />
   </div>
 
-  <button
-    className="menu-toggle"
-    onClick={() => setMenuOpen(!menuOpen)}
-  >
-    ☰
-  </button>
+ <button
+  className="menu-toggle"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? "✕" : "☰ Menu"}
+</button>
 
   <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
     <li><a href="#">Home</a></li>
