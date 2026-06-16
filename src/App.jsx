@@ -43,8 +43,8 @@ const App = () => {
   </ul>
 
   <a href="#contact" className="nav-book-btn">
-    Book Appointment
-  </a>
+  Book Appointment
+</a>
 
 </nav>
       {/* HERO SECTION */}
